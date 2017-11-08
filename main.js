@@ -30,7 +30,7 @@ const render = pairs => {
   const bar = svg.selectAll('.bar')
                  .data(pairs)
                  .enter()
-                 .append('a').attr('href', d => '#' + d[0])
+                 .append('a').attr('href', d => '#id=' + d[0])
                  .append('g')
                  .attr('transform', d => 'translate(' + x(0) + ',' + y(d[0]) + ')')
 
